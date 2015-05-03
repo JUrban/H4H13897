@@ -1,0 +1,28 @@
+This is the H4H13897 benchmark for automated reasoning in large theories (ARLT).
+
+There are large 13897 problems in the benchmark in the directory
+"problems". They are listed in the file ProblemsInProcessingOrder and
+contain altogether 17221 formulas. The problems are created by
+first-order export [1] of theorems and definitions from 125 HOL4 [2] files,
+listed in FilesInProcessingOrder. Only theorems and definitions needed
+by the files are exported. Version HOL4-Kananaskis-10 was used:
+http://sourceforge.net/projects/hol/files/hol/kananaskis-10/kananaskis-10.tar.gz/download .
+
+6811 of these large problems could be proved by the E.T. 0.1 ATP
+system based on E prover, and 7845 were proved in total when E.T. was
+also helped by axiom selection using the k-nearest neighbor machine
+learning method [1] trained on other proofs.  All these 7845 proofs
+are available in the directory proofs_ET.
+
+For copyright and copying information, see the file COPYRIGHt in this
+directory. 
+
+Have fun!
+
+Thibault Gauthier [3] and Cezary Kaliszyk [4] and Josef Urban [5] 
+
+1: Thibault Gauthier and Cezary Kaliszyk: Premise Selection and External Provers for HOL4. CPP 2015: 49-57 .
+2: Konrad Slind, Michael Norrish: A Brief Overview of HOL4. TPHOLs 2008: 28-32
+3: thibault.gauthier@uibk.ac.at
+4: cezary.kaliszyk@uibk.ac.at
+5: josef.urban@gmail.com
